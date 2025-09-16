@@ -34,7 +34,7 @@ app.get('/usuarios',async ( req, res) => {
             }
         })
     } else {
-        users = await prisma.user.findMany() /* busca todos os usuários no banco de ados */
+        users = await prisma.user.findMany() /* busca todos os usuários no banco de dados */
     }
 
     res.status(200).json(users) /*  retorna o array users como resposta em formato JSON */
